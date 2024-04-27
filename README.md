@@ -60,19 +60,48 @@ plt.title("Sobel XY axis")
 plt.axis("off")
 plt.show()
 ```
-
-
-## Output:
-
-
-![output](./sobel.png)
-
 ### LAPLACIAN EDGE DETECTOR
-![output](./laplacian.png)
-
+```
+lap=cv2.Laplacian(gray,cv2.CV_64F)
+plt.imshow(lap,cmap='gray')
+plt.title("Laplacian Edge Detector")
+plt.axis("off")
+plt.show()
+```
 
 ### CANNY EDGE DETECTOR
-![output](./canny.png)
+```
+canny=cv2.Canny(gray,120,150)
+plt.imshow(canny,cmap='gray')
+plt.title("Canny Edge Detector")
+plt.axis("off")
+plt.show()
+
+```
+
+## Output:
+## GRAY IMAGE:
+![image](https://github.com/Goutham2306/EDGE-DETECTION/assets/138971154/56790ab8-bdb9-4e04-b304-5110cc8671f0)
+
+### SOBEL EDGE DETECTOR
+### SOBEL X:
+![image](https://github.com/Goutham2306/EDGE-DETECTION/assets/138971154/67562ce2-fcbc-4e2d-ae11-fd192e3d5635)
+
+### SOBEL Y:
+![image](https://github.com/Goutham2306/EDGE-DETECTION/assets/138971154/31ac9743-854c-4619-9e3c-3c2fe20d2194)
+
+### SOBEL XY:
+
+![image](https://github.com/Goutham2306/EDGE-DETECTION/assets/138971154/85547c81-b827-4527-891e-27c6bfdbddf0)
+
+
+### LAPLACIAN EDGE DETECTOR
+
+![image](https://github.com/Goutham2306/EDGE-DETECTION/assets/138971154/dca49614-205c-4cb4-b201-f4ba79f88e6d)
+
+### CANNY EDGE DETECTOR
+
+![image](https://github.com/Goutham2306/EDGE-DETECTION/assets/138971154/9dc24b46-4144-41fb-8bdf-ba3af1c4452c)
 
 ## Result:
 Thus the edges are detected using Sobel, Laplacian, and Canny edge detectors.
